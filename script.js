@@ -1,8 +1,28 @@
 const songName = document.getElementById('song-name');
+const bandName = document.getElementById('band-name');
 const song = document.getElementById('audio');
+const cover = document.getElementById('cover');
 const play = document.getElementById('play');
 
-songName.innerText = 'Nights';
+const nights = {
+    songName: 'Nights',
+    artist: 'Frank Ocean',
+    image: 'blond',
+    file: 'Frank Ocean - Nights'
+}
+const sickoMode = {
+    songName: 'BUTTERLY EFFECT',
+    artist: 'Travis Scott',
+    image: 'sicko-mode',
+    file: 'Travis Scott - BUTTERFLY EFFECT'
+}
+const telekinesis = {
+    songName: 'TELEKINESIS',
+    artist: 'Travis Scott',
+    image: 'utopia',
+    file: 'Travis Scott - TELEKINESIS'
+}
+
 let isPlaying = false;
 
 function playSong(){
